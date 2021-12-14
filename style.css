@@ -1,4 +1,25 @@
-*{
+@font-face { /* Jeg har downloadet fonten "poppins", en måde at få det ind i dokumentet er igennem font-face */
+    font-family: poppins-r;
+    src: url("./fonts/Poppins-Regular.ttf");
+}
+@font-face { /* jeg har lavet 2 font-face's, en til regular og en til Bold */
+    font-family:poppins-b;
+    src: url(./fonts/Poppins-SemiBold.ttf);
+}
+
+*{ /*jeg start med at den fjerne den styling der allerede er på dokumentet - https://css-tricks.com/reboot-resets-reasoning/ */
     padding: 0;
     margin: 0;
+}
+:root {
+    --background-color: #2F4858;
+    --outside-text-color: #F9EA2B;
+    --circle-color: #000000;
+    --box-color:#4B8078;
+    --box-text-color: #F59D18;
+    --mini-box-color: #E141B2; 
+}
+body{
+    background-color: var(--background-color);
+
 }
