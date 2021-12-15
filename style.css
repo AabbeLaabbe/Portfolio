@@ -10,10 +10,12 @@
 *{ /*jeg start med at den fjerne den styling der allerede er på dokumentet - https://css-tricks.com/reboot-resets-reasoning/ */
     padding: 0;
     margin: 0;
+    box-sizing: border-box; /* bokser browseren */
+    overflow-x: hidden; /* gør at je
 }
-:root { 
+:root { /* da jeg arbejder med mange forskellige farver, har jeg sat en root op (global), ved så at sætte dem i "var" (variable) kan jeg bruge dem lokalt (i enkelte elementer) og sparer derfor tid, da jeg ikke skal copy paste hexcoderne konstant. https://www.w3schools.com/css/css3_variables.asp */
     --background-color: #2F4858;
-    --outside-text-color: #F9EA2B;
+    --intro-color: #F9EA2B;
     --circle-color: #000000;
     --box-color:#4B8078;
     --box-text-color: #F59D18;
@@ -21,5 +23,95 @@
 }
 body{
     background-color: var(--background-color);
+}
+h1{
+    font-family: Copperplate;
+    color: var(--intro-color);
+}
+h2{
+    font-family: copperplate;
+    color: var(--circle-color);
 
+}
+.intro p{
+    color: var(--intro-color);
+}
+p{
+    font-family: poppins;
+    font-size: 21;
+}
+@media screen and (max-width:600px){
+    /* Min "landing page" Jeg har brugt mit mockup fra XD for at følge målene, så det sidder præcist */
+    .intro{
+        text-align: center;
+    }
+    h1{
+        padding-top: 35px;
+        font-size: 40px;
+    }
+    .intro p{
+        padding-top: 200px;
+        padding-bottom: 150px;
+        font-size: 22px;
+    }
+    .arrow-button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding-bottom: 250px;
+    }   
+     /* hertil slutter min "landing page" nedenunder er knapperne til at navigere med https://www.w3schools.com/css/css3_buttons.asp */ 
+    button{
+        background-color: var(--intro-color);
+        font-size: 16px;
+        padding: 20px;
+        border-radius: 70%;
+    }
+    .top-button {
+        display: flex;
+        flex-direction: row;
+    }
+    .midt-button{
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+      
+    }
+    .bot-button{
+        display: flex;
+        justify-content: center;
+       
+        padding-bottom: 300px;
+    }
+    h2{
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+/* her begynder min "Hvem er jeg" section */
+.jeg {
+    background-color: var(--box-color);
+}
+
+.tekst {
+    display:block;
+    text-align: center;
+    padding-bottom: 1rem;
+    margin: 0 1rem;  
+}
+
+.tekst p {
+    background-color: var(--box-text-color);
+    padding: 1rem;
+} /*eftersom mit billede drillede mig meget, tyede jeg til at bruge W3cshools guide til at centrer billedet. https://www.w3schools.com/howto/howto_css_image_center.asp */
+    .nicolai{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    .jeg button{
+        
+    }
+   
 }
