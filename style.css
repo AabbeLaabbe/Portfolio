@@ -169,7 +169,16 @@ p{
         background-color: var(--box-color);
         margin-top: 300px;
     }
-
+    /* her har jeg style min video */
+    .youtube{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        }
+    .youtube iframe{
+        width: 330px;
+        height: auto;
+    }
 
 
 
