@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Nicolai Aarup Larsen</title>
 </head>
+
 <body>
     <section class="intro">
         <h1>Velkommen Til</h1>
@@ -14,14 +16,15 @@
             Scroll gerne ned for, at se hvem jeg er og hvad jeg har være med til, at lave.
         </p>
         <a class="arrow-button" href="#top-buttons"><img src="./img/ned.png" alt="downward-arrow" class="arrow"></a>
-    </section> <!--# referer til ID. ID og A tag for at forbinde frem og tilbage - "button" elementet er primært vis du bruger javascript -->
+    </section>
+    <!--# referer til ID. ID og A tag for at forbinde frem og tilbage - "button" elementet er primært vis du bruger javascript -->
 
     <!--Section nedenunder fungere som en navigering for brugeren, dette er i stedet for en navbar. min plan var at lave den som en pyramide-->
     <section id="top-buttons">
         <div class="top-button">
             <a href="#grafisk">Grafisk design</a>
             <a href="#some">SoMe/
-            branding</a>
+                branding</a>
             <a href="#projekt">Projekt
                 ledelse</a>
         </div>
@@ -31,39 +34,39 @@
                 lyd</a>
         </div>
         <div class="bot-button">
-            <a href="#jeg">Hvem er Jeg</a>      
+            <a href="#jeg">Hvem er Jeg</a>
         </div>
     </section>
 
     <!--her starter min første section. -->
     <!--nednunder er alle mine kategorier. Jeg har valgt at give alle sections, den samme class så de er lettere at style.-->
-    
+
     <section id="jeg">
         <h2>Hvem er Jeg?</h2>
         <img src="./img/forside.jpg" alt="Nicolai" class="nicolai">
         <div class="tekst">
             <p>
                 Mit navn er Nicolai Aarup Larsen og jeg er 24 år gammel.
-                Jeg er født og opvokset på Lolland, sammen med mine forældre 
-                og 2 brødre. i 2017 færdiggjorde jeg Gymnasiet, hvorefter jeg 
-                holdte 2 sabbatår. i 2019 flytte jeg så til Ballerup, hvor jeg startede 
+                Jeg er født og opvokset på Lolland, sammen med mine forældre
+                og 2 brødre. i 2017 færdiggjorde jeg Gymnasiet, hvorefter jeg
+                holdte 2 sabbatår. i 2019 flytte jeg så til Ballerup, hvor jeg startede
                 på pædagog, men droppede ud i 2021. samme år startede jeg så
-                på Multimediedesign i Køge. 
+                på Multimediedesign i Køge.
                 Nedenunder kan i se nogen af de områder jeg har beskæftiget
                 mig i og hvilke produkter det er endt ud i.
             </p>
-            <p>  
+            <p>
                 Tlf: 60471637
                 Mail: Aarupnicolai@hotmail.com
             </p>
             <p>
                 Jeg ser frem til at hører fra jer.
-            </p>     
+            </p>
         </div>
         <div class="button-jeg">
             <a href="#grafisk">Grafisk Design</a>
             <a href="#some">SoMe/
-            Branding</a>
+                Branding</a>
             <a href="#projekt">Projekt
                 ledelse</a>
         </div>
@@ -76,58 +79,47 @@
 
     <!--Her begynder min Grafisk design section, jeg anvender meget af den forrige kode. i denne section tilføjer jeg dog også et slideshow-->
     <section id="grafisk">
-         <h2>Grafisk design</h2>
-        <!--For at lave et slideshow har jeg fuldt W3Schools guide https://www.w3schools.com/howto/howto_js_slideshow.asp-->
-        <div class="slideshow-container">
-            <!--billeder med number og (text eventuelt)-->
-            <div class="">
-                <div>
-
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
+        <h2>Grafisk design</h2>
+        <!--billeder jeg har sat mine billeder i hver deres div, så indivudelt kan justeres -->
+        <div class="giraf">
+            <img src="./img/giraf.png" alt="giraf">
+        </div>
+        <div class="moodboard">
+            <img src="./img/moodboard.png" alt="moodboard">
+        </div>
+        <div class="persona">
+            <img src="./img/persona.png" alt="persona">
         </div>
         <div class="tekst">
             <p>
                 Grafisk design er en stor del af en multimediedesigner.
                 i stort set alle projekter jeg har arbejdet med er der blevet skabt en
-                grafisk identitet fra blikfang i Photoshop, til moodboards i InDesign, 
+                grafisk identitet fra blikfang i Photoshop, til moodboards i InDesign,
                 og meget mere. Ydermere, har jeg også lært
                 om vigtigheden ved farvekombinatoner og hvad den rigtige farve
                 kan gøre ved ens grafiske udtryk.
             </p>
             <!--kompetenceer markeret med lilla-->
-        <div class="kompetencer">
-            <p>Photoshop</p>
-            <p>InDesign</p>
-        </div>
-        <div class="kompetencer">
-            <p>Moodboards</p>
-        </div>
-        <!--navigerigns knapper-->
-        <div class="button-jeg">
-            <a href="#jeg">Hvem er jeg?</a>
-            <a href="#some">SoMe/
-            Branding</a>
-            <a href="#projekt">Projekt
-                ledelse</a>
-        </div>
-        <div class="button-slut">
-            <a href="#web">Web Design</a>
-            <a href="#video">Video/lyd</a>
-        </div>
-        <a class="tilbage" href="#top-buttons"> <img src="./img/tilbage.png" alt="tilbage"></a>
+            <div class="kompetencer">
+                <p>Photoshop</p>
+                <p>InDesign</p>
+            </div>
+            <div class="kompetencer">
+                <p>Moodboards</p>
+            </div>
+            <!--navigerigns knapper-->
+            <div class="button-jeg">
+                <a href="#jeg">Hvem er jeg?</a>
+                <a href="#some">SoMe/
+                    Branding</a>
+                <a href="#projekt">Projekt
+                    ledelse</a>
+            </div>
+            <div class="button-slut">
+                <a href="#web">Web Design</a>
+                <a href="#video">Video/lyd</a>
+            </div>
+            <a class="tilbage" href="#top-buttons"> <img src="./img/tilbage.png" alt="tilbage"></a>
     </section>
 
     <!--næste section - SoMe/branding -->
@@ -136,141 +128,145 @@
         <!--Slideshow-->
         <div class="tekst">
             <p>
-                På Multimediedesign har vi deltage i Iværksætter konkurrence. En 
+                På Multimediedesign har vi deltage i Iværksætter konkurrence. En
                 konkurrence, der bliver afholdt hvert år, hvor alle 1 semestre
-                studerende på landets erhvervsuddannelser deltog. 
+                studerende på landets erhvervsuddannelser deltog.
                 Min gruppe og jeg var de eneste på Zealand Køge, der gik videre
                 til finalen, hvor vi dystede mod 10 andre om at vinde 10.000kr til
-                at videreudvikle vores koncept. 
+                at videreudvikle vores koncept.
                 I projektet, lærte jeg hvordan man sælger og brander sin virksomhed,
                 igennem SoMe medier. Samtidig lærte vi også hvordan man pitcher
-                sin ide til kunder.  Ud over at komme i finalen, vandt min gruppe og 
-                jeg bedst pitch af dommerne. 
+                sin ide til kunder. Ud over at komme i finalen, vandt min gruppe og
+                jeg bedst pitch af dommerne.
             </p>
             <!--kompetenceer markeret med lilla-->
-        <div class="kompetencer">
-            <p>Contentplan</p>
-            <p>Pitche</p>
-        </div>
-        <div class="kompetencer">
-            <p>Contentstrategi</p>
-            <p>BMC</p>
-        </div>
-        <!--navigerigns knapper-->
-        <div class="button-jeg">
-            <a href="#grafisk">Grafisk Design</a>
-            <a href="#jeg">Hvem er jeg?</a>
-            <a href="#projekt">Projekt
-                ledelse</a>
-        </div>
-        <div class="button-slut">
-            <a href="#web">Web Design</a>
-            <a href="#video">Video/lyd</a>
-        </div>
-        <a class="tilbage" href="#top-buttons"> <img src="./img/tilbage.png" alt="tilbage"></a>
+            <div class="kompetencer">
+                <p>Contentplan</p>
+                <p>Pitche</p>
+            </div>
+            <div class="kompetencer">
+                <p>Contentstrategi</p>
+                <p>BMC</p>
+            </div>
+            <!--navigerigns knapper-->
+            <div class="button-jeg">
+                <a href="#grafisk">Grafisk Design</a>
+                <a href="#jeg">Hvem er jeg?</a>
+                <a href="#projekt">Projekt
+                    ledelse</a>
+            </div>
+            <div class="button-slut">
+                <a href="#web">Web Design</a>
+                <a href="#video">Video/lyd</a>
+            </div>
+            <a class="tilbage" href="#top-buttons"> <img src="./img/tilbage.png" alt="tilbage"></a>
     </section>
 
     <!--næste section - projektledelse -->
     <section id="projekt">
-        <h2>Projektledelse</h2>    
-         <!--Slideshow-->
-         <div class="tekst">
+        <h2>Projektledelse</h2>
+        <!--Slideshow-->
+        <div class="tekst">
             <p>
-                Når man arbejder med store projekter, er det vigtig at have et 
+                Når man arbejder med store projekter, er det vigtig at have et
                 godt team. på Multimediedesign lærer vi vigtigheden af at alle
-                i gruppen har en rolle. jeg har i 2 projekter være projektleder, og 
-                har igennem det lært vigtigheden af samarbejde og hvad god, 
-                kommunikation betyder.  
+                i gruppen har en rolle. jeg har i 2 projekter være projektleder, og
+                har igennem det lært vigtigheden af samarbejde og hvad god,
+                kommunikation betyder.
             </p>
             <!--kompetenceer markeret med lilla-->
-        <div class="kompetencer">
-            <p>Jamboard</p>
-            <p>Trello</p>
-        </div>
-        <div class="kompetencer">
-            <p>Personlighedstyper</p>
-        </div>
-        <!--navigerigns knapper-->
-        <div class="button-jeg">
-            <a href="#grafisk">Grafisk Design</a>
-            <a href="#some">SoMe/
-                Branding</a>
-            <a href="#jeg">Hvem er jeg?</a>
-        </div>
-        <div class="button-slut">
-            <a href="#web">Web Design</a>
-            <a href="#video">Video/lyd</a>
-        </div>
-        <a class="tilbage" href="#top-buttons"> <img src="./img/tilbage.png" alt="tilbage"></a>
+            <div class="kompetencer">
+                <p>Jamboard</p>
+                <p>Trello</p>
+            </div>
+            <div class="kompetencer">
+                <p>Personlighedstyper</p>
+            </div>
+            <!--navigerigns knapper-->
+            <div class="button-jeg">
+                <a href="#grafisk">Grafisk Design</a>
+                <a href="#some">SoMe/
+                    Branding</a>
+                <a href="#jeg">Hvem er jeg?</a>
+            </div>
+            <div class="button-slut">
+                <a href="#web">Web Design</a>
+                <a href="#video">Video/lyd</a>
+            </div>
+            <a class="tilbage" href="#top-buttons"> <img src="./img/tilbage.png" alt="tilbage"></a>
     </section>
 
     <!-- Næste section - web-->
     <section id="web">
         <h2>Web design</h2>
-             <!--Slideshow-->
-         <div class="tekst">
+        <!--Slideshow-->
+        <div class="tekst">
             <p>
                 Udover Grafisk Design, har jeg også lært en del om,
-                Web design både i form af kode, 
+                Web design både i form af kode,
                 men også at designe protyper og give kunden
-                en mulighed for at få visualiseret sit ønske, 
-                inde det bliver kodet.  
+                en mulighed for at få visualiseret sit ønske,
+                inde det bliver kodet.
             </p>
             <!--kompetenceer markeret med lilla-->
-        <div class="kompetencer">
-            <p>Mockup</p>
-            <p>Wireframes</p>
-        </div>
-        <div class="kompetencer">
-            <p>XD</p>
-        </div>
-        <!--navigerigns knapper-->
-        <div class="button-jeg">
-            <a href="#grafisk">Grafisk Design</a>
-            <a href="#some">SoMe/
-                Branding</a>
-            <a href="#projekt">Projek
-                ledelse</a>
-        </div>
-        <div class="button-slut">
-            <a href="#jeg">Hvem er jeg?</a>
-            <a href="#video">Video/lyd</a>
-        </div>
-        <a class="tilbage" href="#top-buttons"> <img src="./img/tilbage.png" alt="tilbage"></a>
+            <div class="kompetencer">
+                <p>Mockup</p>
+                <p>Wireframes</p>
+            </div>
+            <div class="kompetencer">
+                <p>XD</p>
+            </div>
+            <!--navigerigns knapper-->
+            <div class="button-jeg">
+                <a href="#grafisk">Grafisk Design</a>
+                <a href="#some">SoMe/
+                    Branding</a>
+                <a href="#projekt">Projek
+                    ledelse</a>
+            </div>
+            <div class="button-slut">
+                <a href="#jeg">Hvem er jeg?</a>
+                <a href="#video">Video/lyd</a>
+            </div>
+            <a class="tilbage" href="#top-buttons"> <img src="./img/tilbage.png" alt="tilbage"></a>
     </section>
 
     <!--Video-->
     <section id="video">
         <h2>Video/lyd</h2>
-                <!--for at få et videoklip med i min portofolio, har jeg embeded den fra youtube. efterfølgende har jeg style den i css så den passer bedre.-->
-                <div class="youtube">
-                <iframe class="youtube" src="https://www.youtube.com/embed/4p9ottowT7A" title="YouTube-video-player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="tekst">
-                    <p>
-                        På Multimedie har vi også arbejdet med lyd og Video. vores intro-
-                        duktion til mediet, var i form af "how to" video
-                        den kan ses her til venstre.  
-                    </p>
-                    <!--kompetenceer markeret med lilla-->
-                <div class="kompetencer">
-                    <p>After effects</p>
-                    <p>Premiere Pro</p>
-                </div>
-                <!--navigerigns knapper-->
-                <div class="button-jeg">
-                    <a href="#grafisk">Grafisk Design</a>
-                    <a href="#some">SoMe/
-                        Branding</a>
-                    <a href="#projekt">Projek
-                        ledelse</a>
-                </div>
-                <div class="button-slut">
-                    <a href="#web">Web Design</a>
-                    <a href="#jeg">Hvem er jeg?</a>
-                </div>
-                <a class="tilbage" href="#top-buttons"> <img src="./img/tilbage.png" alt="tilbage"></a>
+        <!--for at få et videoklip med i min portofolio, har jeg embeded den fra youtube. efterfølgende har jeg style den i css så den passer bedre.-->
+        <div class="youtube">
+            <iframe class="youtube" src="https://www.youtube.com/embed/4p9ottowT7A" title="YouTube-video-player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="tekst">
+            <p>
+                På Multimedie har vi også arbejdet med lyd og Video. vores intro-
+                duktion til mediet, var i form af "how to" video
+                den kan ses her til venstre.
+            </p>
+            <!--kompetenceer markeret med lilla-->
+            <div class="kompetencer">
+                <p>After effects</p>
+                <p>Premiere Pro</p>
+            </div>
+            <!--navigerigns knapper-->
+            <div class="button-jeg">
+                <a href="#grafisk">Grafisk Design</a>
+                <a href="#some">SoMe/
+                    Branding</a>
+                <a href="#projekt">Projek
+                    ledelse</a>
+            </div>
+            <div class="button-slut">
+                <a href="#web">Web Design</a>
+                <a href="#jeg">Hvem er jeg?</a>
+            </div>
+            <a class="tilbage" href="#top-buttons"> <img src="./img/tilbage.png" alt="tilbage"></a>
     </section>
-    
+
 </body>
+
 </html>

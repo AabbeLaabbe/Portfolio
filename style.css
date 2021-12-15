@@ -146,6 +146,20 @@ p{
         background-color: var(--box-color);
         margin-top: 300px;
     }
+
+    /* style af billeder */
+
+    .giraf{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+    }
+
+
+
+
+
     /* stylen på min tekst foregår længere oppe */ 
     .kompetencer {
         background-color: var(--box-text-color);
