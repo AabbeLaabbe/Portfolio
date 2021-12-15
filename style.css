@@ -11,7 +11,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box; /* bokser browseren */
-    overflow-x: hidden; /* gør at je
+    overflow-x: hidden; /* gør at at den ikke kan scrolle til siderne*/
 }
 :root { /* da jeg arbejder med mange forskellige farver, har jeg sat en root op (global), ved så at sætte dem i "var" (variable) kan jeg bruge dem lokalt (i enkelte elementer) og sparer derfor tid, da jeg ikke skal copy paste hexcoderne konstant. https://www.w3schools.com/css/css3_variables.asp */
     --background-color: #2F4858;
@@ -20,6 +20,9 @@
     --box-color:#4B8078;
     --box-text-color: #F59D18;
     --mini-box-color: #E141B2; 
+}
+html {
+    scroll-behavior: smooth; /* denne funktion gør at den klider lettere igennem koden, når man trykker på knapperne */
 }
 body{
     background-color: var(--background-color);
@@ -31,7 +34,8 @@ h1{
 h2{
     font-family: copperplate;
     color: var(--circle-color);
-
+    font-size: 30px;
+    margin-top: 20px;
 }
 .intro p{
     color: var(--intro-color);
@@ -40,7 +44,6 @@ p{
     font-family: poppins;
     font-size: 21;
 }
-@media screen and (max-width:600px){
     /* Min "landing page" Jeg har brugt mit mockup fra XD for at følge målene, så det sidder præcist */
     .intro{
         text-align: center;
@@ -58,18 +61,29 @@ p{
         background-color: transparent;
         border: none;
         cursor: pointer;
-        padding-bottom: 250px;
+        display: flex;
+        justify-content: center;
     }   
      /* hertil slutter min "landing page" nedenunder er knapperne til at navigere med https://www.w3schools.com/css/css3_buttons.asp */ 
-    button{
+    #top-buttons {
+        padding-top: 250px;
+    }
+    
+     a { /* style til mine anchors, som også fungere som mine knapper */ 
         background-color: var(--intro-color);
         font-size: 16px;
         padding: 20px;
-        border-radius: 70%;
+        border-radius: 80%;
+        text-decoration: none;
+        font-family: poppins;
+        color: var(--circle-color);
+        display: flex;
+        text-align: center;
+        margin: 1px;
     }
     .top-button {
         display: flex;
-        flex-direction: row;
+        justify-content: row;
     }
     .midt-button{
         display: flex;
@@ -80,7 +94,6 @@ p{
     .bot-button{
         display: flex;
         justify-content: center;
-       
         padding-bottom: 300px;
     }
     h2{
@@ -89,20 +102,20 @@ p{
         padding-bottom: 20px;
     }
 /* her begynder min "Hvem er jeg" section */
-.jeg {
+#jeg {
     background-color: var(--box-color);
 }
 
-.tekst {
+.tekst { /* style på min tekst, går igen i alle mine sections */ 
     display:block;
-    text-align: center;
-    padding-bottom: 1rem;
-    margin: 0 1rem;  
+    padding-top: 1rem;
+    margin: 0 1rem;
 }
 
 .tekst p {
     background-color: var(--box-text-color);
     padding: 1rem;
+    line-height: 2;
 } /*eftersom mit billede drillede mig meget, tyede jeg til at bruge W3cshools guide til at centrer billedet. https://www.w3schools.com/howto/howto_css_image_center.asp */
     .nicolai{
         display: block;
@@ -110,8 +123,57 @@ p{
         margin-right: auto;
         width: 80%;
     }
-    .jeg button{
-        
+    .button-jeg{ /* de 3 først navigatons knapper underbilledet */
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+    } 
+
+    .button-slut{ /* de 2 sidste navigationsknapper */
+        display: flex;
+        justify-content: center;
+        padding: 5px;
     }
-   
-}
+    .tilbage{ /* knappen der vender tilbage til start */
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        float: left;
+
+ /* her starter min Grafisk design section */ 
+    } /* Har ændret bagggrundsfarven og sat en margin på så hver section får luft*/ 
+    #grafisk{
+        background-color: var(--box-color);
+        margin-top: 300px;
+    }
+    /* stylen på min tekst foregår længere oppe */ 
+    .kompetencer {
+        background-color: var(--box-text-color);
+        display: flex;
+        justify-content: center;
+        color: var(--mini-box-color);
+        font-size: 20px;
+    }
+/* her starter min SoMe/branding section */ 
+    #some{
+        background-color: var(--box-color);
+        margin-top: 300px;
+    }
+/*her starter min projektledelse section*/ 
+    #projekt{ 
+        background-color: var(--box-color);
+        margin-top: 300px;
+    }
+/* her starter min Web Design Section. */     
+    #web{ 
+        background-color: var(--box-color);
+        margin-top: 300px;
+    }
+
+
+
+
+
+
+
+   /* @media screen and (min-width:600px) */
