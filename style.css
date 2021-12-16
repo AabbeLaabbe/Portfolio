@@ -64,7 +64,7 @@ p{
         display: flex;
         justify-content: center;
     }   
-     /* hertil slutter min "landing page" nedenunder er knapperne til at navigere med https://www.w3schools.com/css/css3_buttons.asp */ 
+     /* hertil slutter min "landing page" nedenunder er "knapperne" til at navigere med  */ 
     #top-buttons {
         padding-top: 250px;
     }
@@ -83,7 +83,7 @@ p{
     }
     .top-button {
         display: flex;
-        justify-content: row;
+        justify-content: center;
     }
     .midt-button{
         display: flex;
@@ -96,15 +96,18 @@ p{
         justify-content: center;
         padding-bottom: 300px;
     }
+    
+/* her begynder min "Hvem er jeg?" section */
+
+    #jeg {
+    background-color: var(--box-color);
+    }
+
     h2{
         text-align: center;
         padding-top: 10px;
         padding-bottom: 20px;
     }
-/* her begynder min "Hvem er jeg" section */
-#jeg {
-    background-color: var(--box-color);
-}
 
 .tekst { /* style på min tekst, går igen i alle mine sections */ 
     display:block;
@@ -116,6 +119,7 @@ p{
     background-color: var(--box-text-color);
     padding: 1rem;
     line-height: 2;
+
 } /*eftersom mit billede drillede mig meget, tyede jeg til at bruge W3cshools guide til at centrer billedet. https://www.w3schools.com/howto/howto_css_image_center.asp */
     .nicolai{
         display: block;
@@ -148,30 +152,57 @@ p{
     }
 
     /* style af billeder */
-
-    .giraf{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 30%;
-    }
-
-
-
-
-
+        .persona{
+            display: flex;
+            justify-content: center;
+            width: auto;
+            height: 250px;
+        }
+        .moodboard {
+            display: flex;
+            justify-content: center;
+            width: auto;
+            height: 280px;
+            margin: 5px;
+        }
+        .giraf{
+            display: flex;
+            justify-content: center;
+            width: auto;
+            height: 280px;
+        }
     /* stylen på min tekst foregår længere oppe */ 
     .kompetencer {
         background-color: var(--box-text-color);
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        text-align: center;
         color: var(--mini-box-color);
         font-size: 20px;
+        margin-left: 16px;
+         margin-right: 16px;
+        
     }
 /* her starter min SoMe/branding section */ 
     #some{
         background-color: var(--box-color);
         margin-top: 300px;
+    }
+    /* billeder */
+    .pitch {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        height: 280px;
+        margin: 5px;
+    }
+    .calender{
+        display: flex;
+        justify-content: center;
+        width: auto;
+        height: 280px;
+        margin: 5px;
+        border: solid;
     }
 /*her starter min projektledelse section*/ 
     #projekt{ 
@@ -183,7 +214,25 @@ p{
         background-color: var(--box-color);
         margin-top: 300px;
     }
+    .mockup{
+        display: flex;
+        justify-content: center;
+        width: auto;
+        height: 280px;
+        margin: 5px; 
+    }
+    .nehmap{
+        display: flex;
+        justify-content: center;
+        width: auto;
+        height: 280px;
+        margin: 5px; 
+    }
     /* her har jeg style min video */
+    #video{
+        background-color: var(--box-color);
+        margin-top: 300px;
+    }
     .youtube{
         display: flex;
         justify-content: center;
@@ -193,10 +242,62 @@ p{
         width: 330px;
         height: auto;
     }
-
-
-
-
-
-
-   /* @media screen and (min-width:600px) */
+    iframe{
+        border: none;
+    }
+/* her smider jeg media query, og begynder at opskalere så den passer med browser */
+@media screen and (min-width:600px) {
+    h1{
+        font-size: 60px;
+    }
+    /* her har jeg stylet forsiden og knapperne */
+    .intro p{
+        font-size: 20px;
+        max-width: 50%;
+        margin-left:auto ;
+        margin-right: auto;
+    }
+    .top-button a{
+        padding: 10px;
+        font-size: 30px;
+        margin: 10px;
+    }
+    .midt-button a {
+        padding: 10px;
+        font-size: 30px;
+        margin: 10px;
+    }
+    .bot-button a{
+        padding: 10px;
+        font-size: 30px;
+        margin: 10px;
+    /* her har jeg stylet mit "hvem er jeg?" section */
+    }
+    h2{
+        margin-right: 50px;
+    }
+    .nicolai{
+        height: 400px;
+        width: auto;
+    }
+    .button-jeg a{
+        padding: 30px;
+        margin: 5px;
+        font-size: 20px;
+    }
+    .button-slut a{
+        padding: 30px;
+        margin: 5px;
+        font-size: 20px;
+    }
+    /* her begynder mit "Web Design" */
+    .kompetencer{
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .persona{
+        float: left;''
+    }
+    
+}
+   
