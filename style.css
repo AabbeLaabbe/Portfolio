@@ -22,7 +22,7 @@
     --mini-box-color: #E141B2; 
 }
 html {
-    scroll-behavior: smooth; /* denne funktion gør at den klider lettere igennem koden, når man trykker på knapperne */
+    scroll-behavior: smooth; /* denne funktion gør at den glider lettere igennem koden, når man trykker på knapperne */
 }
 body{
     background-color: var(--background-color);
