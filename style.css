@@ -3,7 +3,7 @@
     src: url("./fonts/Poppins-Regular.ttf"); /* taget fra https://fonts.google.com/specimen/Poppins#standard-styles */
 }
 @font-face { /* jeg har lavet 2 font-face's, poppins er til min tekst og Copperplate Gothic er til mine headings*/
-    font-family:Copperplate;
+    font-family: copperplate;
     src: url(./fonts/CopperplateGothicBold.ttf); /* taget fra https://www.wfonts.com/font/copperplate-gothic-bold */ 
 }
 
@@ -28,7 +28,7 @@ body{
     background-color: var(--background-color);
 }
 h1{
-    font-family: Copperplate;
+    font-family: copperplate;
     color: var(--intro-color);
 }
 h2{
@@ -89,7 +89,6 @@ p{
         display: flex;
         justify-content: center;
         padding: 5px;
-      
     }
     .bot-button{
         display: flex;
@@ -104,7 +103,8 @@ p{
     }
 
     h2{
-        text-align: center;
+        display: flex;
+        justify-content: center;
         padding-top: 10px;
         padding-bottom: 20px;
     }
@@ -122,7 +122,7 @@ p{
 
 } /*eftersom mit billede drillede mig meget, tyede jeg til at bruge W3cshools guide til at centrer billedet. https://www.w3schools.com/howto/howto_css_image_center.asp */
     .nicolai{
-        display: block;
+        display: flex;
         margin-left: auto;
         margin-right: auto;
         width: 80%;
@@ -163,13 +163,14 @@ p{
             justify-content: center;
             width: auto;
             height: 280px;
-            margin: 5px;
+            padding-top: 5px;
         }
         .giraf{
             display: flex;
             justify-content: center;
             width: auto;
             height: 280px;
+            padding-top: 5px;
         }
     /* stylen på min tekst foregår længere oppe */ 
     .kompetencer {
@@ -202,9 +203,16 @@ p{
         width: auto;
         height: 280px;
         margin: 5px;
+    }
+    .calender img{
         border: solid;
     }
 /*her starter min projektledelse section*/ 
+    .hold{
+        width: auto;
+        height: 230px;
+        margin-left: 6px;
+        }
     #projekt{ 
         background-color: var(--box-color);
         margin-top: 300px;
@@ -246,7 +254,11 @@ p{
         border: none;
     }
 /* her smider jeg media query, og begynder at opskalere så den passer med browser */
-@media screen and (min-width:600px) {
+@media screen and (min-width:600px) { 
+    .kompetencer{
+        margin-left: 16px;
+        margin-right: 16px;
+    }
     h1{
         font-size: 60px;
     }
@@ -275,9 +287,11 @@ p{
     }
     h2{
         margin-right: 50px;
+        margin-left: auto;
+        margin-right: auto;
     }
-    .nicolai{
-        height: 400px;
+    .nicolai{ /*billede af mig */ 
+        height: 500px;
         width: auto;
     }
     .button-jeg a{
@@ -290,14 +304,48 @@ p{
         margin: 5px;
         font-size: 20px;
     }
-    /* her begynder mit "Web Design" */
-    .kompetencer{
-        margin-left: 16px;
-        margin-right: 16px;
-    }
+    /* har valgt at flote mit moodboard og give giraf og moodboard en rem i margin og padding, så de står mere centreret */ 
     .persona{
-        float: left;''
+    height: 400px;
+    width: auto;
     }
-    
+    .moodboard{
+    float: left;
+    height: 400px;
+    width: auto;
+    margin-left: 3rem;
+    }
+    .giraf{
+    height: auto;
+    width: 400px;
+    margin-left: 45rem;
+    }
+    /* her begynder mit "Web Design". her ændre jeg på pitch */
+    .pitch{
+        float: left;
+        margin-left: 5rem;
+    }
+    .pitch img{
+        height: auto;
+        width: 400px;
+    }
+    .calender img{
+        height: auto;
+        width: 600px;
+    }
+    /* styler mit hold billede, i Projektledeses sectionen */ 
+    .hold{
+        height: auto;
+        width: 50rem;
+        margin-left: 14rem;
+    }
+    /* styler mit mockup billede, i Web Design section */
+    .mockup{
+        float: left;
+        margin-left: 6rem;
+    }
+    .youtube{
+        height: 20rem;
+        width: 80rem;
+    }
 }
-   
