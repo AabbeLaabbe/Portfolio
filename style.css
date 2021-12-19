@@ -86,7 +86,7 @@ p{
         justify-content: center;
     }
     .midt-button{
-        display: flex;
+        display: flex; /* når man flexer, gør du det fleksibelt og du kan rykke rundt på det og dermed bliver responsive */
         justify-content: center;
         padding: 5px;
     }
